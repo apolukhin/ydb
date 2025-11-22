@@ -86,7 +86,6 @@ ydb/core/tx/schemeshard/ut_index TAsyncIndexTests.CdcAndMergeWithReboots[TabletR
 ydb/core/tx/schemeshard/ut_index unittest.[*/*] chunk
 ydb/core/tx/schemeshard/ut_index_build_reboots IndexBuildTestReboots.BaseCase
 ydb/core/tx/schemeshard/ut_index_build_reboots IndexBuildTestReboots.IndexPartitioning
-ydb/core/tx/schemeshard/ut_index_build_reboots IndexBuildTestReboots.IndexPartitioningUniq
 ydb/core/tx/schemeshard/ut_index_build_reboots IndexBuildTestReboots.UniqueIndexValidationFailsBetweenShards
 ydb/core/tx/schemeshard/ut_index_build_reboots IndexBuildTestReboots.UniqueIndexValidationFailsInsideShard
 ydb/core/tx/schemeshard/ut_index_build_reboots unittest.[*/*] chunk
@@ -161,11 +160,8 @@ ydb/services/ydb/ut TGRpcAuthentication.ValidCredentials
 ydb/services/ydb/ut YdbLogStore.AlterLogTable
 ydb/services/ydb/ut YdbQueryService.TestCreateAndAttachSession
 ydb/tests/compatibility py3test.[test_statistics.py */*] chunk
-ydb/tests/compatibility test_compatibility.py.TestCompatibility.test_tpch1[restart_current_to_stable-25-3-1-row]
 ydb/tests/compatibility test_compatibility.py.TestCompatibility.test_tpch1[restart_stable-25-2-1_to_stable-25-3-1-row]
-ydb/tests/compatibility test_compatibility.py.TestCompatibility.test_tpch1[restart_stable-25-3-1_to_current-row]
 ydb/tests/compatibility test_compatibility.py.TestCompatibility.test_tpch1[restart_stable-25-3-1_to_stable-25-2-1-row]
-ydb/tests/compatibility test_compatibility.py.TestCompatibility.test_tpch1[restart_stable-25-3-1_to_stable-25-3-1-row]
 ydb/tests/compatibility test_data_type.py.TestDataType.test_parametrized_data_type[restart_stable-25-2-1_to_stable-25-3-1-COLUMN]
 ydb/tests/compatibility test_data_type.py.TestDataType.test_parametrized_data_type[restart_stable-25-3-1_to_stable-25-2-1-COLUMN]
 ydb/tests/compatibility test_statistics.py.TestBaseStatisticsRollingUpdate.test[rolling_stable-25-3-1_to_prestable-25-4]
@@ -175,7 +171,6 @@ ydb/tests/compatibility test_statistics.py.TestStatisticsTLI.test_statistics_tli
 ydb/tests/compatibility test_stress.py.TestStress.test_log[mixed_current-row]
 ydb/tests/compatibility test_stress.py.TestStress.test_tpch1[mixed_current_and_stable-25-3-1-column-date64]
 ydb/tests/compatibility test_stress.py.TestStress.test_tpch1[mixed_current_and_stable-25-3-1-row]
-ydb/tests/compatibility test_stress.py.TestStress.test_tpch1[mixed_stable-25-3-1-row]
 ydb/tests/compatibility test_stress.py.TestStress.test_tpch1[mixed_stable-25-3-1_and_stable-25-2-1-row]
 ydb/tests/compatibility/olap test_rename_table.py.TestRenameTableRollingUpdate.test_rename_table[rolling_stable-25-2-1_to_stable-25-3-1]
 ydb/tests/compatibility/s3_backups test_export_import_s3.py.TestExportImportS3.test_topics[mixed_stable-25-3-1_and_stable-25-2-1]
@@ -205,6 +200,7 @@ ydb/tests/functional/blobstorage test_pdisk_slot_size_in_units.py.TestPDiskSlotS
 ydb/tests/functional/blobstorage test_pdisk_slot_size_in_units.py.TestPDiskSlotSizeInUnits.test_change_pdisk_slot_size_in_units
 ydb/tests/functional/config test_distconf.py.TestDistConfWithAuth.test_auth_v2_initialization
 ydb/tests/functional/config test_distconf_sentinel_node_status.py.TestKiKiMRDistConfSelfHealReassignNodeAfterReconfiguration.test_state_storage
+ydb/tests/functional/config test_pdisk_metadata_cli.py.TestPDiskMetadata.test_apply_committed_config
 ydb/tests/functional/encryption test_encryption.py.TestEncryption.test_simple_encryption
 ydb/tests/functional/hive test_drain.py.TestHive.test_drain_on_stop
 ydb/tests/functional/postgresql test_postgres.py.TestPostgresSuite.test_postgres_suite[select_1]
@@ -244,6 +240,7 @@ ydb/tests/olap test_overloads.py.TestLogScenario.test_overloads_workload[1000-2]
 ydb/tests/olap test_overloads.py.TestLogScenario.test_overloads_workload[2-10000]
 ydb/tests/olap test_overloads.py.TestLogScenario.test_overloads_workload[2-2]
 ydb/tests/olap test_replace.py.TestReplace.test_copy_full
+ydb/tests/olap upgrade_to_internal_path_id.py.TestUpgradeToInternalPathId.test
 ydb/tests/olap/s3_import py3test.sole chunk
 ydb/tests/olap/s3_import test_simple_table.py.TestSimpleTable.test_unavailable_during_import
 ydb/tests/olap/s3_import test_types_and_formats.py.TestTypesAndFormats.test_parquet_datetime_types
